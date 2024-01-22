@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.background{
+    
+    margin-left: 0px;
+    width: 100%;
+    min-height: 100vh;
+    background-image:url(images/back.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #ecb600;
+    background-position: center;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{   
+    width: 20vh;
+
+}
+nav ul li{
+
+    font-size: 18px;
+    display: inline-block;
+    list-style:circle;
+    margin: 10px 15px;
+    
+}
+nav ul li a{
+    border-radius: 5px;
+    
+    text-decoration: none;
+    font-size: large;
+    color: #ebe9ee;
+    font: weight 200;
+     
+}
+.login{
+   text-decoration: none;
+   color: rgb(233, 228, 227);
+   margin-right: 40px; 
+   font-weight: 400;
+   display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #f1601d,#f00a4f);
+    font-size: 20px;
+    border-bottom-right-radius: 0px;
+    transition: 0.5s;
+}
+.login:hover{
+    border-bottom-right-radius: 20px;
+}
+.download{
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 20px;
+  text-decoration: none;
+  color: #f5f5f5;
+  background-image: linear-gradient(45deg, #df4881,#c430d7);
+  font-size: 18px;
+  border-bottom-right-radius: 0px;
+  transition: 0.5s;
+  animation-delay:1s;
+
+}
+.download:hover{
+    border-bottom-right-radius: 20px;
+
+
+}
+.content{
+    margin-top: 20%;
+    max-width: 600px;
+}
+.content h1{
+    font-size: 70px;
+    color: rgb(243, 82, 8);
+}
+.content p{
+    color: rgb(80, 41, 171);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    animation-delay:0.5;
+    
+}
+.front{
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.front-img.anim{
+    animation-delay:1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translate(30px);
+    animation: moveup 5s linear forwards;
+}
+@keyframes moveup {
+ 100%{
+    opacity: 1;
+    transform: translate(30px);
+ }   
+}
